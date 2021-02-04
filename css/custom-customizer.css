@@ -1,0 +1,41 @@
+/*
+*
+*
+* CUSTOM CSS FOR CUSTOM CONTROLS
+*
+*/
+#occ_customizer_label{
+	font-weight: 600;
+	color:#424242;
+	font-size:16px;
+	padding:10px;
+	text-align:center;
+	width:100%;
+	display: inline-block;
+}
+#wp_customize_select_radio{
+	width:100%;
+	margin: 0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+#wp_customize_select_radio input[type="radio"]{
+	display:none;
+}
+#wp_customize_select_radio label{
+	padding:5px 10px;
+	background:#424242;
+	font-size:12px;
+	display: block;
+	color:#fff;
+	transition: 0.3s;
+	width:100%;
+	border:1px solid #ddd;
+}
+#wp_customize_select_radio input[type="radio"]:checked ~ label{
+	background:#2c68a0;
+}
+
+
