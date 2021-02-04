@@ -54,7 +54,7 @@ $wp_customize->add_control( new WP_Customize_Select_Radio_Control(
 
 //Sanitize Callback Select Radio
 function occ_theme_sanitize_select_radio( $value ){
-    //returns true if checkbox is checked
+    
     return ( $value );
 }
 
