@@ -13,5 +13,14 @@
 	<?php wp_head(); ?>
 </head>
 
+ <header>
+	<nav class="navbar navbar-light bg-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">
+	      <?php bloginfo( 'name' ); ?>
+	    </a>
+	  </div>
+	</nav>
+</header>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>

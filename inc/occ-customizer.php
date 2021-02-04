@@ -42,10 +42,33 @@ $wp_customize->add_control( new WP_Customize_Select_Radio_Control(
         'label' => __( 'Select Show Div1 or Div2', 'occ-theme' ),
         'section' => 'occ_custom_section',
         'settings' => 'occ_custom_select_radio_control',
+        'description' => 'Do you want to display this element?',
         'choices' => array(
             'div1' => esc_html__('Show Div 01?','occ-theme'),
             'div2' => esc_html__('Show Div 02?','occ-theme')           
         )
+    ) 
+));
+
+/* --------------------------------------------------
+                CHECKBOX ON|OFF
+----------------------------------------------------*/
+
+$wp_customize->add_setting( 'occ_custom_checkbox_control',
+    array(
+        'transport' => 'refresh',
+        'sanitize_callback' => 'occ_theme_sanitize_checkbox'
+    )
+);
+$wp_customize->add_control( new WP_Customize_Checkbox_Control( 
+    $wp_customize, 
+    'occ_custom_checkbox_control', 
+    array(
+        'label' => __( 'Hidden or show Element', 'occ-theme' ),
+        'section' => 'occ_custom_section',
+        'settings' => 'occ_custom_checkbox_control',
+        'type' => 'checkbox',
+        'description' => 'Do you want to display this element?',
     ) 
 ));
 
@@ -55,11 +78,19 @@ $wp_customize->add_control( new WP_Customize_Select_Radio_Control(
 
 /************* Sanitize Callback ******************/
 
-//checkbox sanitization function
+//Sanitize Callback Select Radio
 function occ_theme_sanitize_select_radio( $value ){
     //returns true if checkbox is checked
     return ( $value );
 }
+
+//checkbox sanitization function
+function occ_theme_sanitize_checkbox( $input ){
+      
+    //returns true if checkbox is checked
+    return ( ( isset( $input ) && true == $input ) ? true : false );
+}
+
 
 /************* End Sanitize Callback ***************/
 }

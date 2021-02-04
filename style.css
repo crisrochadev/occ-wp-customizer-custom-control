@@ -24,45 +24,19 @@ Text Domain: occ-custom-control
 body{
 	font-family: 'Open Sans', sans-serif;
 }
-.occ_custom_customizer{
-		width:100%;
-		background:#CACACA;
-		padding: 10px;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-	}
-	.occ_custom_customizer h3{
-		color:#c93b0c;
-		text-align: center;
-	}
-	.select_radio{
-		width:100%;
-		display: block;
-	}
-	.select_radio div{
-		margin:10px;
-		padding: 10px;
-		box-shadow: 0 4px 8px rgba(0,0,0,.3);
-		font-size:18px;
-		text-align:center;
-		text-transform: uppercase;
-		font-weight: 700;
-	}
-	.select_radio div.div1{
-		background: #7d2da1;
-		color:#fff;
-	}
-	.select_radio div.div2{
-		background: #fff;
-		color:#7d2da1;
-	}
-	.title_controls{
-		text-align: center;
-		text-transform: uppercase;
-		font-size:18px;
-		font-weight: 700;
-		padding: 10px;
-		color:#000;
-	}
+.row{
+	border-bottom:1px solid #424242;
+}
+.row .title_row{
+	color:#910C0C;
+	font-size:30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+.row .info_row{
+	color:#424242;
+	font-size:16px;
+	font-weight: 700;
+	text-align: center;
+}

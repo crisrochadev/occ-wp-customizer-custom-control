@@ -4,6 +4,15 @@
 * CUSTOM CSS FOR CUSTOM CONTROLS
 *
 */
+.customizer_control_item{
+	border:1px solid #ccc;
+	margin:5px 0;
+	padding: 10px;
+}
+.customizer_control_item p{
+	text-align:center;
+	font-weight: 600;
+}
 #occ_customizer_label{
 	font-weight: 600;
 	color:#424242;
@@ -28,14 +37,118 @@
 	padding:5px 10px;
 	background:#424242;
 	font-size:12px;
-	display: block;
 	color:#fff;
 	transition: 0.3s;
-	width:100%;
 	border:1px solid #ddd;
 }
 #wp_customize_select_radio input[type="radio"]:checked ~ label{
 	background:#2c68a0;
+}
+
+
+/********************* Checkbox Custom Control ************************/
+
+#wp_customize_checkbox {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+#occ_customize_checkbox{
+	display:grid;
+	grid-template-columns: 2fr 1fr;
+	grid-gap: 5px;
+	justify-content: center;
+	align-items: center;
+}
+#occ_customize_checkbox_label{
+	grid-column:1;
+	grid-row:1;
+	font-weight: 600;
+	color:#424242;
+	font-size:16px;
+}
+#wp_customize_checkbox {
+	grid-column:2;
+	grid-row:1;
+}
+#occ_customize_checkbox_description{
+	grid-column:1/3;
+	grid-row:2;
+}
+#wp_customize_checkbox input {
+	grid-column:2;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  font-size:0;
+}
+
+/* The slider */
+#occ_checkbox_control_span{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 0;
+  bottom: 0;
+  background-color: #8F8A8A;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 18px;
+}
+
+#occ_checkbox_control_span:before {
+  position: absolute;
+  content:"";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #424242;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index:8;
+  border-radius: 15px;
+}
+#occ_checkbox_control_span:after{
+	content:"OFF";
+	font-size: 14px;
+	font-weight: 700;
+	color:#fff;
+	position: absolute;
+	top:0;
+	left:auto;
+	right:0;
+	height: 100%;
+  	width: 50%;
+  	z-index: 5;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+#wp_customize_checkbox input:checked + #occ_checkbox_control_span{
+  background-color: #619ED7;
+}
+
+#wp_customize_checkbox input:focus + #occ_checkbox_control_span{
+  box-shadow: 0 0 1px #2196F3;
+}
+
+#wp_customize_checkbox input:checked + #occ_checkbox_control_span:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background: #2c68a0;
+}
+#wp_customize_checkbox input:checked + #occ_checkbox_control_span:after {
+  left:0;
+  right:auto;
+  content:"ON";
 }
 
 
