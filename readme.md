@@ -18,12 +18,12 @@ Under development -
 
 ## Custom Controls ##
 
-###Custom Select Radio Control
+### Custom Select Radio Control
 
 **Control**
 
 
-```
+```php
 
 $wp_customize->add_setting( 'occ_custom_select_radio_control',
     array(
@@ -50,7 +50,7 @@ $wp_customize->add_control( new WP_Customize_Select_Radio_Control(
 
 **Sanitize Callback**
 
-```
+```php
 
 //Sanitize Callback Select Radio
 function occ_theme_sanitize_select_radio( $value ){
@@ -62,7 +62,7 @@ function occ_theme_sanitize_select_radio( $value ){
 
 **Create WP_Custom_Control for Select Radio**
 
-```
+```php
 
 class WP_Customize_Select_Radio_Control extends WP_Customize_Control {
         public $type = 'select';
