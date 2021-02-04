@@ -2,7 +2,7 @@
 
 **Author:** Cris Rocha 
 
-**Author URI:** https://ocodigocris/
+**Author URI:** https://ocodigocris.com/
 
 **Version:** 1.0
 
@@ -17,7 +17,11 @@ Under development -
 ## Links ##
 [O código Cris ](https://ocodigocris.com)  
 
+# Get Started
 
+1. Weit
+1. Wheit
+1. Wait
 
 
 ## Custom Controls ##
@@ -105,4 +109,6 @@ Under development -
 **Example**
 
 
-Under development -# occ-wp-customizer-custom-control
+Under development 
+
+# occ-wp-customizer-custom-control
