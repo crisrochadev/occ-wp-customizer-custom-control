@@ -7,8 +7,8 @@
            				OCC CUSTOM CONTROLS
 **************************************************************/
 
-
 function occ_theme_customizer( $wp_customize ) {
+
 
 // *************** Settings panel for occ custom Controls
 
@@ -27,6 +27,7 @@ $wp_customize->add_section('occ_custom_section',array(
 /* --------------------------------------------------
 				SELECT RADIO CONTROL
 ----------------------------------------------------*/
+
 $wp_customize->add_setting( 'occ_custom_select_radio_control',
     array(
         'default' => 'div1',
@@ -40,14 +41,10 @@ $wp_customize->add_control( new WP_Customize_Select_Radio_Control(
     array(
         'label' => __( 'Select Show Div1 or Div2', 'occ-theme' ),
         'section' => 'occ_custom_section',
-        'settings' => 'occ_custom_control',
+        'settings' => 'occ_custom_select_radio_control',
         'choices' => array(
             'div1' => esc_html__('Show Div 01?','occ-theme'),
-            'div2' => esc_html__('Show Div 02?','occ-theme'),
-            'div3' => esc_html__('Show Div 03?','occ-theme'),
-            'div4' => esc_html__('Show Div 04?','occ-theme'),
-            'div5' => esc_html__('Show Div 05?','occ-theme'),
-            'div6' => esc_html__('Show Div 06?','occ-theme'),            
+            'div2' => esc_html__('Show Div 02?','occ-theme')           
         )
     ) 
 ));
