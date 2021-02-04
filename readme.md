@@ -22,7 +22,6 @@ Under development -
 
 **Control**
 ...
-
 $wp_customize->add_setting( 'occ_custom_select_radio_control',
     array(
         'default' => 'div1',
@@ -46,8 +45,8 @@ $wp_customize->add_control( new WP_Customize_Select_Radio_Control(
 ...
 
 **Sanitize Callback**
-...
 
+...
 //Sanitize Callback Select Radio
 function occ_theme_sanitize_select_radio( $value ){
     //returns true if checkbox is checked
@@ -58,7 +57,6 @@ function occ_theme_sanitize_select_radio( $value ){
 **Create WP_Custom_Control for Select Radio**
 
 ...
-
 class WP_Customize_Select_Radio_Control extends WP_Customize_Control {
         public $type = 'select';
  
@@ -84,6 +82,7 @@ class WP_Customize_Select_Radio_Control extends WP_Customize_Control {
         }
     }
 ...
+
 Under development -
 
 ### Usage ###
