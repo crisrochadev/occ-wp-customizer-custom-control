@@ -2,7 +2,11 @@
 
 **Author:** Cris Rocha 
 
+<<<<<<< HEAD
 **Author URI:** https://ocodigocris/
+=======
+**Author URI:** https://ocodigocris.com/
+>>>>>>> a010c56a8ee906b8cb0dd4e09e8acc7b1bb83e9c
 
 **Version:** 1.0
 
@@ -18,8 +22,15 @@ Under development -
 
 [O código Cris ](https://ocodigocris.com)  
 
+# Get Started
 
+<<<<<<< HEAD
 # Get Started #
+=======
+1. Weit
+1. Wheit
+1. Wait
+>>>>>>> a010c56a8ee906b8cb0dd4e09e8acc7b1bb83e9c
 
 Under development -
 # Custom Controls #
@@ -27,6 +38,7 @@ Under development -
 1. **Select Radio Controls**
 1. **Checkbox ONN | OFF Control**
 
+<<<<<<< HEAD
 # Exemples #
 
 ### **Custom Select Radio Control**
@@ -34,6 +46,16 @@ Under development -
 
 
 ![Custom Select Radio Control](img/custom-select-radio.png)
+=======
+### Custom Select Radio Control
+
+![Custom Select Radio Control](https://lh3.googleusercontent.com/-Mnc_Y1gMSSo/YBvZwf1kNdI/AAAAAAAAJ0o/XhM2ABFRxkwT4KtTXOgZCAq75ilKawemQCLcBGAsYHQ/w680/image.png)
+
+**Control**
+
+
+```php
+>>>>>>> a010c56a8ee906b8cb0dd4e09e8acc7b1bb83e9c
 
 
 **Control**
@@ -58,21 +80,38 @@ $wp_customize->add_control( new WP_Customize_Select_Radio_Control(
         )
     ) 
 ));
+<<<<<<< HEAD
+```
+
+**Sanitize Callback**
+=======
+
 ```
 
 **Sanitize Callback**
 
 ```php
+>>>>>>> a010c56a8ee906b8cb0dd4e09e8acc7b1bb83e9c
+
+```php
 //Sanitize Callback Select Radio
 function occ_theme_sanitize_select_radio( $value ){
-    //returns true if checkbox is checked
+    
     return ( $value );
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> a010c56a8ee906b8cb0dd4e09e8acc7b1bb83e9c
 ```
 
 **Create WP_Custom_Control for Select Radio**
 
 ```php
+<<<<<<< HEAD
+=======
+
+>>>>>>> a010c56a8ee906b8cb0dd4e09e8acc7b1bb83e9c
 class WP_Customize_Select_Radio_Control extends WP_Customize_Control {
         public $type = 'select';
  
@@ -97,6 +136,7 @@ class WP_Customize_Select_Radio_Control extends WP_Customize_Control {
         <?php
         }
     }
+<<<<<<< HEAD
 ```
 ### **Custom Checkbox ON | OFF Control**
 
@@ -162,6 +202,9 @@ class WP_Customize_Checkbox_Control extends WP_Customize_Control {
         <?php
         }
     }
+=======
+    
+>>>>>>> a010c56a8ee906b8cb0dd4e09e8acc7b1bb83e9c
 ```
 
 Under development -
@@ -175,4 +218,6 @@ Under development -
 
 
 
-Under development -# occ-wp-customizer-custom-control
+Under development 
+
+# occ-wp-customizer-custom-control
